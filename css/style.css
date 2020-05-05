@@ -1,0 +1,16 @@
+/*darkblue = #1e1e3c*/
+/*lightgreen = #63e3c3*/
+/*darkgreen = #3cdcb4*/
+/*yellow = #ffee00*/
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #63e3c3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #63e3c3, #3cdcb4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #63e3c3, #3cdcb4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Merriweather', serif;
+}
