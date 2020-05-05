@@ -16,6 +16,7 @@ html, body {
   flex-direction: column;
 }
 
+/*TODO: large decimal numbers overflow container, font-size needs to adjust*/
 .output {
   box-sizing: border-box;
   width: 100%;
@@ -56,6 +57,10 @@ button:hover {
 
 button:active {
   background-color: #C1C1C1;
+}
+
+button:focus {
+  outline: none;
 }
 
 button:nth-child(4n) {
