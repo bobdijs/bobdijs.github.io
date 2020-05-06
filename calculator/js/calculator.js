@@ -13,10 +13,8 @@ const keys = [].concat(numbers, operators, specialOperators)
 
 let buffer = ''
 
-document.querySelectorAll('button').forEach((elem) => {
-  elem.addEventListener('click', (e) => {
-    handleEvent(e.target.value)
-  })
+document.querySelector('.input').addEventListener('click', (event) => {
+  handleEvent(event.target.value)
 })
 
 function handleEvent (key) {
@@ -39,6 +37,9 @@ function handleEvent (key) {
         buffer = eval(buffer).toString()
         break
       case '*-1':
+        /*
+        flip a valid number from positive to negative and vice versa
+        */
         if (buffer !== '' && !isNaN(buffer)) {
           buffer = eval(buffer + key).toString()
         }
